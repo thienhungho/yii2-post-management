@@ -93,13 +93,11 @@ class TermOfPostType extends \yii\db\ActiveRecord
         ];
     }
 
-
     /**
-     * @inheritdoc
-     * @return \thienhungho\PostManagement\modules\PostBase\TermOfPostTypeQuery the active query used by this AR class.
+     * @return \thienhungho\PostManagement\modules\PostBase\query\TermOfPostTypeQuery
      */
     public static function find()
     {
-        return new \thienhungho\PostManagement\modules\PostBase\TermOfPostTypeQuery(get_called_class());
+        return new \thienhungho\PostManagement\modules\PostBase\query\TermOfPostTypeQuery(get_called_class());
     }
 }
