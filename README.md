@@ -82,3 +82,8 @@ Constant
 ------------
 
 [Core](https://github.com/thienhungho/yii2-post-management/tree/master/src/const/core.php)
+
+Models
+------------
+
+[Post](https://github.com/thienhungho/yii2-post-management/tree/master/src/models/Post.php), [PostType](https://github.com/thienhungho/yii2-post-management/tree/master/src/models/PostType.php), [TermOfPostType](https://github.com/thienhungho/yii2-post-management/tree/master/src/models/TermOfPostType.php)
