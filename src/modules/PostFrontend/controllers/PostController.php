@@ -5,7 +5,7 @@ namespace thienhungho\PostManagement\modules\PostFrontend\controllers;
 use thienhungho\PostManagement\modules\PostBase\Post;
 use thienhungho\PostManagement\modules\PostManage\search\PostSearch;
 use thienhungho\TermManagement\modules\TermBase\Term;
-use common\modules\comments\Comment;
+use thienhungho\CommentManagement\models\Comment;
 use common\modules\seo\Seo;
 use Yii;
 use yii\data\ActiveDataProvider;

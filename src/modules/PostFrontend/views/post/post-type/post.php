@@ -8,7 +8,7 @@ $limitComment = Yii::$app->request->get('number-comment', 1);
 <?= $model->content ?>
 
 <?php
-$numberComment = \common\modules\comments\Comment::find()
+$numberComment = \thienhungho\CommentManagement\models\Comment::find()
     ->where(['obj_type' => $model->post_type])
     ->andWhere(['obj_id' => $model->getPrimaryKey()])
     ->andWhere(['type' => $model->post_type . '-comment'])
@@ -17,7 +17,7 @@ $numberComment = \common\modules\comments\Comment::find()
 ?>
 <?= $numberComment ?><?php
 $dataProvider = new \yii\data\ActiveDataProvider([
-    'query'      => \common\modules\comments\Comment::find()
+    'query'      => \thienhungho\CommentManagement\models\Comment::find()
         ->where(['obj_type' => $model->post_type])
         ->andWhere(['obj_id' => $model->getPrimaryKey()])
         ->andWhere(['type' => $model->post_type . '-comment'])

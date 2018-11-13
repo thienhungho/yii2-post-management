@@ -92,7 +92,7 @@ view()->params['breadcrumbs'][] = view()->title;
                 }
             },
             'filterType'          => GridView::FILTER_SELECT2,
-            'filter'              => \yii\helpers\ArrayHelper::map(\common\models\User::find()
+            'filter'              => \yii\helpers\ArrayHelper::map(\thienhungho\UserManagement\models\User::find()
                 ->asArray()
                 ->all(), 'id', 'username'
             ),

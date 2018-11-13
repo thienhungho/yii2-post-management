@@ -3,7 +3,7 @@
 namespace thienhungho\PostManagement\modules\PostManage\controllers;
 
 use common\modules\seo\Seo;
-use common\modules\terms\TermRelationships;
+use thienhungho\TermManagement\models\TermRelationships;
 use Yii;
 use thienhungho\PostManagement\modules\PostBase\PostType;
 use thienhungho\PostManagement\modules\PostManage\search\PostTypeSearch;

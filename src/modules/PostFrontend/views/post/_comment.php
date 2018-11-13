@@ -3,7 +3,7 @@
 ?>
 
 <div class="review" style="padding-bottom: 4px">
-    <div class="user-img" style="background-image: url(/<?= empty($model->author0->avatar) ? \common\models\User::DEFAULT_AVATAR : $model->author0->avatar?>)"></div>
+    <div class="user-img" style="background-image: url(/<?= empty($model->author0->avatar) ? \thienhungho\UserManagement\models\User::DEFAULT_AVATAR : $model->author0->avatar?>)"></div>
     <div class="desc">
         <h4>
             <span class="text-left"><?= $model->author_name ?></span>
@@ -21,7 +21,7 @@
 if (!empty($model->child)) {
     foreach ($model->child as $child) { ?>
         <div class="review" style="padding-bottom: 4px; width: 90%; float: right;">
-            <div class="user-img" style="/<?= empty($child->author0->avatar) ? \common\models\User::DEFAULT_AVATAR : \common\modules\media\Media::getOtherSizePath('thumbnail', $child->author0->avatar) ?>"></div>
+            <div class="user-img" style="/<?= empty($child->author0->avatar) ? \thienhungho\UserManagement\models\User::DEFAULT_AVATAR : get_other_img_size_path('thumbnail', $child->author0->avatar) ?>"></div>
             <div class="desc">
                 <h4>
                     <span class="text-left"><?= $child->author_name ?></span>

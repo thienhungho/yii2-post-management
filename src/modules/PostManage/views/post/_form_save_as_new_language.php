@@ -63,7 +63,7 @@ if (empty($model->id)) {
         <?= $form->field($model, 'author', [
             'addon' => ['prepend' => ['content' => '<span class="fa fa-user"></span>']],
         ])->widget(\kartik\widgets\Select2::classname(), [
-            'data'          => \yii\helpers\ArrayHelper::map(\common\models\User::find()->orderBy('id')->asArray()->all(), 'id', 'username'),
+            'data'          => \yii\helpers\ArrayHelper::map(\thienhungho\UserManagement\models\User::find()->orderBy('id')->asArray()->all(), 'id', 'username'),
             'options'       => ['placeholder' => t('app', 'Choose User')],
             'pluginOptions' => [
                 'allowClear' => true,

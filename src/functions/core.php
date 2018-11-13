@@ -157,7 +157,7 @@ function count_all_comment_of_post($post_type = 'post', $id, $status = STATUS_PU
  * @param int $limit
  * @param string $data_type
  *
- * @return array|\common\modules\comments\Comment[]|\thienhungho\PostManagement\modules\PostBase\query\Comment[]
+ * @return array|\thienhungho\CommentManagement\models\Comment[]|\thienhungho\PostManagement\modules\PostBase\query\Comment[]
  */
 function get_all_comment_of_post(
     $post_type,
