@@ -7,7 +7,7 @@ namespace thienhungho\PostManagement\modules\PostBase\query;
  *
  * @see TermOfPostType
  */
-class TermOfPostTypeQuery extends \yii\db\ActiveQuery
+class TermOfPostTypeQuery extends \thienhungho\ActiveQuery\models\ActiveQuery
 {
     /*public function active()
     {
