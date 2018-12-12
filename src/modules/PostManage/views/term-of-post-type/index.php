@@ -5,7 +5,7 @@
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 use yii\helpers\Html;
-use kartik\grid\GridView;
+use thienhungho\Widgets\models\GridView;
 
 $this->title = t('app', 'Term Of Post Type');
 $this->params['breadcrumbs'][] = $this->title;

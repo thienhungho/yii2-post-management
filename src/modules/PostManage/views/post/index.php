@@ -1,6 +1,6 @@
 <?php
 
-use kartik\grid\GridView;
+use thienhungho\Widgets\models\GridView;
 use yii\helpers\Html;
 
 view()->params['breadcrumbs'][] = view()->title;

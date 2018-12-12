@@ -1,6 +1,6 @@
 <div class="form-group" id="add-post">
 <?php
-use kartik\grid\GridView;
+use thienhungho\Widgets\models\GridView;
 use kartik\builder\TabularForm;
 use yii\data\ArrayDataProvider;
 use yii\helpers\Html;
