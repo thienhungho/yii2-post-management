@@ -10,6 +10,7 @@ use \thienhungho\PostManagement\modules\PostBase\base\Post as BasePost;
 class Post extends BasePost
 {
     const POST_TYPE_POST = 'post';
+    const POST_FEATURE_IMG_INPUT_NAME = 'Post[feature_img]';
 
     /**
      * @return array
@@ -65,7 +66,7 @@ class Post extends BasePost
     public function beforeSave($insert)
     {
         if (parent::beforeSave($insert)) {
-            $img = upload_img('Post[feature_img]' , false);
+            $img = upload_img(self::POST_FEATURE_IMG_INPUT_NAME , false);
             if (!empty($img)) {
                 $this->feature_img = $img;
             } elseif(empty($img) && !$this->isNewRecord) {

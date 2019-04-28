@@ -15,6 +15,6 @@ class PostRender extends Post
 
     public function renderContent()
     {
-        return $this . $this->beforeContent . $this->content . $this->afterContent;
+        return $this->beforeContent . $this->content . $this->afterContent;
     }
 }
