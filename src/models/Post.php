@@ -9,5 +9,12 @@ use \thienhungho\PostManagement\modules\PostBase\Post as BasePost;
  */
 class Post extends BasePost
 {
+    public $beforeContent;
 
+    public $afterContent;
+
+    public function renderContent()
+    {
+        return $this->beforeContent . $this->content . $this->afterContent;
+    }
 }
