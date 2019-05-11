@@ -63,6 +63,12 @@ Add module PostManage to your `AppConfig` file.
     'post-manage' => [
         'class' => 'thienhungho\PostManagement\modules\PostManage\PostManage',
     ],
+    /**
+     * Post Frontend
+     */
+    'post' => [
+        'class' => 'thienhungho\PostManagement\modules\PostFrontend\PostModule',
+    ],
     ...
 ],
 ...
@@ -71,7 +77,8 @@ Add module PostManage to your `AppConfig` file.
 Modules
 ------------
 
-[PostBase](https://github.com/thienhungho/yii2-post-management/tree/master/src/modules/PostBase), [PostManage](https://github.com/thienhungho/yii2-post-management/tree/master/src/modules/PostManage)
+[PostBase](https://github.com/thienhungho/yii2-post-management/tree/master/src/modules/PostBase), [PostManage](https://github.com/thienhungho/yii2-post-management/tree/master/src/modules/PostManage), 
+[PostFrontend](https://github.com/thienhungho/yii2-post-management/tree/master/src/modules/PostFrontend)
 
 Functions
 ------------
