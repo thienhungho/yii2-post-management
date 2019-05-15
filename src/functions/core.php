@@ -190,3 +190,31 @@ function get_all_term_type_of_post_type($post_type)
         ->asArray()
         ->all();
 }
+
+/**
+ * @param $post_id
+ * @param int $limit
+ *
+ * @return array|\thienhungho\PostManagement\models\Post[]|\thienhungho\PostManagement\modules\PostBase\query\Post[]|\yii\db\ActiveRecord[]
+ */
+function get_next_post($post_id, $limit = 1)
+{
+    return \thienhungho\PostManagement\models\Post::find()
+        ->nextRecord($post_id)
+        ->limit($limit)
+        ->all();
+}
+
+/**
+ * @param $post_id
+ * @param int $limit
+ *
+ * @return array|\thienhungho\PostManagement\models\Post[]|\thienhungho\PostManagement\modules\PostBase\query\Post[]|\yii\db\ActiveRecord[]
+ */
+function get_previous_post($post_id, $limit = 1)
+{
+    return \thienhungho\PostManagement\models\Post::find()
+        ->previousRecord($post_id)
+        ->limit($limit)
+        ->all();
+}
